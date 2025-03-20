@@ -4,6 +4,12 @@ Muestra el siguiente mensaje con el resultado de contar el número de vocales qu
 “Number of vowels is <result>” 
 Nota: vowels = "aeiou" (no incluyas acentos)
 */
+
+/**
+ * Funcion que te dice el numero de vocales que tiene la palabra introducida.
+ * @param {*} string 
+ * @returns 
+ */
 export function exercise03(string) {
   const vowels = "aeiou";
 

@@ -11,9 +11,20 @@ Un reloj muestra:
  - hay 1000 millisegundos en un segundo.
  - podemos obtener la hora, minutos y segundos con la función "getTime" .
 */
-export function exercise07(date) {
-  // Escribe tu solución aquí
 
+/**
+ * Función que calcula los milisegundos que han pasado desde media noche.
+ * @param {*} date 
+ * @returns 
+ */
+export function exercise07(date) {
+  // Obtenemos la fecha actual.
+  const now = new Date();
+  // Obtenemos la hora, minutos y segundos de la fecha.
+  const time = getTime(date);
+  const ms = time.hours * 3600000 + time.minutes * 60000 + time.seconds * 100
+  time.hours === 0 && time.minutes === 0 && time.seconds === 0 ? ms : ms + 1000
+  // Escribe tu solución aquí
   return `Milliseconds from midnight: ${ms}`;
 }
 

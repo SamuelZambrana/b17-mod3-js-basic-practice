@@ -9,6 +9,12 @@ Ejemplos:
   exercise05('list') // result: "LIiSssTttt"
   exercise05('function') // result: "FUuNnnCcccTttttIiiiiiOooooooNnnnnnnn"
 */
+
+/**
+ * Funcion que recibe una cadena de texto y devuelve otra cadena con cada letra repetida tantas veces como la posición que ocupa empezando la primera repetición en mayúscula y el resto en minúscula
+ * @param {string} string
+ * @returns {string}
+ */
 export function exercise05(string) {
   
   let result = "";

@@ -5,6 +5,12 @@ Pasándole el string “Hi, I am learning Javascript” la función debe devolve
 Nota: vowels = "aeiouAEIOU" (no incluyas los acentos)
 Atención: cuidado con vocales aisladas y con espacios en blanco dobles
 */
+
+/**
+ * Funcion que le introduce un string y elimina las vocales de ese string
+ * @param {*} string 
+ * @returns 
+ */
 export function exercise04(string) {
   const vowels = "aeiouAEIOU";
   // Eliminamos los espacios en blanco dobles
