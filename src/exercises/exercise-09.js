@@ -7,6 +7,15 @@ Ejemplo:
   exercise09(5, 0, 100) 
   devuelve "The minimum number is 0 and the maximum number is 100 in [0,50,99,49,100]"
 */
+
+/**
+ * Funcion que genera un array de un determinado tamaño con números aleatorios entre dos valores
+ * y calcula el menor y el mayor de estos números.
+ * @param {*} length 
+ * @param {*} start 
+ * @param {*} end 
+ * @returns 
+ */
 export function exercise09(length, start, end) {
   // Generamos un array de longitud length con números aleatorios entre start y end
   const arrayOfRandomNumbers = Array.from({ length }, () => Math.floor(Math.random() * (end - start + 1)) + start);

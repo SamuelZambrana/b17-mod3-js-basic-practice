@@ -6,6 +6,36 @@ que ocupa cada carácter en el abecedario. Para que sea más sencillo, elimina l
 */
 export function exercise10(string) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  //
+  string = string.toLowerCase();
+  // Eliminamos los espacios
+  while (string.includes(" ")) {
+    string = string.replace(" ", "");
+  }
+  // Eliminamos las tildes
+  string = removeAccents(string);
+  // Creamos un array con las posiciones de cada carácter en el abecedario
+  const positions = string.split("").map(character => alphabet.indexOf(character) + 1);
+  return positions;
+}
 
-  // Escribe tu solución aquí
+/**
+ * Función que elimina las tildes de una cadena de texto.
+ * @param {*} text 
+ * @returns 
+ */
+function removeAccents(text) {
+  const mapAccents = {
+      "á": "a",
+      "é": "e",
+      "í": "i",
+      "ó": "o",
+      "ú": "u"
+  };
+  let textWithoutAccents = "";
+  for (let i = 0; i < text.length; i++) {
+      const character = text[i];
+      textWithoutAccents += mapAccents[character] || character;
+  }
+  return textWithoutAccents;
 }
