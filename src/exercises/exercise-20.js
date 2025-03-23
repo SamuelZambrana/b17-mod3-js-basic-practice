@@ -15,10 +15,37 @@ Ejemplo: Fibonacci(20) = 6765
 Nota: evita llamar a la función con números altos en la versión recursiva.
 */
 
+/**
+ * Funcion recursiva que devuelve el numero de Fibonacci de n.
+ * @param {*} n 
+ * @returns Numero de Fibonacci de n
+ */
 export function exercise20(n) {
-  // Escribe tu solución aquí
+  // Condiciones base
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+  // Llamadas recursivas
+  return exercise20(n - 1) + exercise20(n - 2);
 }
 
+/**
+ * Funcion recursiva que devuelve el numero de Fibonacci de n.
+ * @param {*} n 
+ * @returns Numero de Fibonacci de n
+ */
 export function exercise20Iterative(n) {
-  // Escribe tu solución aquí
+  if (n === 0) return 0; // Caso base para Fib(0)
+  if (n === 1) return 1; // Caso base para Fib(1)
+
+  let prev = 0; // Inicializamos Fib(0)
+  let curr = 1; // Inicializamos Fib(1)
+
+  // Iteramos desde 2 hasta n
+  for (let i = 2; i <= n; i++) {
+      const temp = curr; // Guardamos el valor actual
+      curr = curr + prev; // Calculamos el siguiente número de Fibonacci
+      prev = temp; // Actualizamos el valor previo
+  }
+
+  return curr; // Retornamos el Fibonacci de n
 }
