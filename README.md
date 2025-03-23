@@ -1,4 +1,6 @@
 📝 JavaScript Basic Practice - Module 3 (B17)
+
+
 📖 Descripción
 Este repositorio contiene ejercicios prácticos básicos de JavaScript como parte del Módulo 3 del curso B17. Está diseñado para ayudarte a reforzar los fundamentos del lenguaje, mejorar tus habilidades con funciones, estructuras de control y lógica de programación. Cada ejercicio está orientado a resolver un caso práctico con código claro y eficiente.
 
